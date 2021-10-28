@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SchoolLibrary;
 using System.Windows.Forms;
 
 namespace SchoolFormsApp
@@ -29,6 +30,23 @@ namespace SchoolFormsApp
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
+
+            var testSchool = new School();
+            testSchool.Name = txtName.Text;
+            testSchool.Address = txtAddress.Text;
+            testSchool.City = txtCity.Text;
+            testSchool.State = txtState.Text;
+            testSchool.Zip = txtZip.Text;
+            testSchool.PhoneNumber = txtPhone.Text;
+            
+            try { 
+            testSchool.TwitterAddress = txtTwitter.Text;
+            } catch (Exception err)
+            {
+                MessageBox.Show(err.Message);
+            }
+
+            MessageBox.Show(testSchool.ToString());
 
         }
 
@@ -58,11 +76,6 @@ namespace SchoolFormsApp
         }
 
         private void textName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
         {
 
         }

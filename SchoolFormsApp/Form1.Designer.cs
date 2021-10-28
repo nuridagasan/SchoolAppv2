@@ -94,7 +94,6 @@
             this.label5.Size = new System.Drawing.Size(65, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Zip Code";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -119,7 +118,7 @@
             // txtName
             // 
             this.txtName.Location = new System.Drawing.Point(129, 43);
-            this.txtName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtName.Margin = new System.Windows.Forms.Padding(4);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 7;
@@ -128,7 +127,7 @@
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(129, 95);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(4);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(132, 22);
             this.txtAddress.TabIndex = 8;
@@ -137,7 +136,7 @@
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(129, 144);
-            this.txtCity.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCity.Margin = new System.Windows.Forms.Padding(4);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(132, 22);
             this.txtCity.TabIndex = 9;
@@ -146,7 +145,7 @@
             // txtState
             // 
             this.txtState.Location = new System.Drawing.Point(129, 187);
-            this.txtState.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtState.Margin = new System.Windows.Forms.Padding(4);
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(132, 22);
             this.txtState.TabIndex = 10;
@@ -155,7 +154,7 @@
             // txtZip
             // 
             this.txtZip.Location = new System.Drawing.Point(129, 233);
-            this.txtZip.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtZip.Margin = new System.Windows.Forms.Padding(4);
             this.txtZip.Name = "txtZip";
             this.txtZip.Size = new System.Drawing.Size(132, 22);
             this.txtZip.TabIndex = 11;
@@ -164,7 +163,7 @@
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(129, 274);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(132, 22);
             this.txtPhone.TabIndex = 12;
@@ -173,7 +172,7 @@
             // txtTwitter
             // 
             this.txtTwitter.Location = new System.Drawing.Point(129, 311);
-            this.txtTwitter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTwitter.Margin = new System.Windows.Forms.Padding(4);
             this.txtTwitter.Name = "txtTwitter";
             this.txtTwitter.Size = new System.Drawing.Size(132, 22);
             this.txtTwitter.TabIndex = 13;
@@ -182,7 +181,7 @@
             // btnPushToTest
             // 
             this.btnPushToTest.Location = new System.Drawing.Point(79, 391);
-            this.btnPushToTest.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPushToTest.Margin = new System.Windows.Forms.Padding(4);
             this.btnPushToTest.Name = "btnPushToTest";
             this.btnPushToTest.Size = new System.Drawing.Size(184, 28);
             this.btnPushToTest.TabIndex = 14;
@@ -210,7 +209,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
