@@ -17,7 +17,52 @@ namespace SchoolFormsApp
             InitializeComponent();
         }
 
-        private void txtZip_TextChanged(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textAddress_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void submitBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textZip_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textTwitter_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textState_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textCity_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
         {
 
         }

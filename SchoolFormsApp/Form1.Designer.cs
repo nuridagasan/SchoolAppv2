@@ -58,7 +58,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 98);
+            this.label2.Location = new System.Drawing.Point(56, 98);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(60, 17);
@@ -68,7 +68,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(75, 148);
+            this.label3.Location = new System.Drawing.Point(72, 147);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 17);
@@ -78,7 +78,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(75, 191);
+            this.label4.Location = new System.Drawing.Point(72, 192);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 17);
@@ -88,12 +88,13 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(75, 236);
+            this.label5.Location = new System.Drawing.Point(51, 233);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 17);
+            this.label5.Size = new System.Drawing.Size(65, 17);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Zip";
+            this.label5.Text = "Zip Code";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label6
             // 
@@ -122,6 +123,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(132, 22);
             this.txtName.TabIndex = 7;
+            this.txtName.TextChanged += new System.EventHandler(this.textName_TextChanged);
             // 
             // txtAddress
             // 
@@ -130,6 +132,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(132, 22);
             this.txtAddress.TabIndex = 8;
+            this.txtAddress.TextChanged += new System.EventHandler(this.textAddress_TextChanged);
             // 
             // txtCity
             // 
@@ -138,6 +141,7 @@
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(132, 22);
             this.txtCity.TabIndex = 9;
+            this.txtCity.TextChanged += new System.EventHandler(this.textCity_TextChanged);
             // 
             // txtState
             // 
@@ -146,6 +150,7 @@
             this.txtState.Name = "txtState";
             this.txtState.Size = new System.Drawing.Size(132, 22);
             this.txtState.TabIndex = 10;
+            this.txtState.TextChanged += new System.EventHandler(this.textState_TextChanged);
             // 
             // txtZip
             // 
@@ -154,7 +159,7 @@
             this.txtZip.Name = "txtZip";
             this.txtZip.Size = new System.Drawing.Size(132, 22);
             this.txtZip.TabIndex = 11;
-            this.txtZip.TextChanged += new System.EventHandler(this.txtZip_TextChanged);
+            this.txtZip.TextChanged += new System.EventHandler(this.textZip_TextChanged);
             // 
             // txtPhone
             // 
@@ -163,6 +168,7 @@
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(132, 22);
             this.txtPhone.TabIndex = 12;
+            this.txtPhone.TextChanged += new System.EventHandler(this.textPhone_TextChanged);
             // 
             // txtTwitter
             // 
@@ -171,6 +177,7 @@
             this.txtTwitter.Name = "txtTwitter";
             this.txtTwitter.Size = new System.Drawing.Size(132, 22);
             this.txtTwitter.TabIndex = 13;
+            this.txtTwitter.TextChanged += new System.EventHandler(this.textTwitter_TextChanged);
             // 
             // btnPushToTest
             // 
@@ -179,8 +186,9 @@
             this.btnPushToTest.Name = "btnPushToTest";
             this.btnPushToTest.Size = new System.Drawing.Size(184, 28);
             this.btnPushToTest.TabIndex = 14;
-            this.btnPushToTest.Text = "Push To Test";
+            this.btnPushToTest.Text = "Submit";
             this.btnPushToTest.UseVisualStyleBackColor = true;
+            this.btnPushToTest.Click += new System.EventHandler(this.submitBtn_Click);
             // 
             // Form1
             // 
@@ -205,6 +213,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
