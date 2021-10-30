@@ -31,7 +31,7 @@ namespace SchoolFormsApp
         private void submitBtn_Click(object sender, EventArgs e)
         {
 
-            var testSchool = new School();
+            School testSchool = new School();
             testSchool.Name = txtName.Text;
             testSchool.Address = txtAddress.Text;
             testSchool.City = txtCity.Text;
@@ -47,6 +47,8 @@ namespace SchoolFormsApp
             }
 
             MessageBox.Show(testSchool.ToString());
+
+            
 
         }
 
