@@ -48,6 +48,8 @@ namespace SchoolFormsApp
 
             MessageBox.Show(testSchool.ToString());
 
+            Teacher teacher = new Teacher();
+            Student student = new Student();
             
 
         }
@@ -80,6 +82,20 @@ namespace SchoolFormsApp
         private void textName_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnTestStudent_Click(object sender, EventArgs e)
+        {
+            Student student = new Student();
+            var gradePointStudent = student.ComputeGradeAverage();
+            MessageBox.Show($"The student's grade average is {gradePointStudent}");
+        }
+
+        private void btnTestTeacher_Click(object sender, EventArgs e)
+        {
+            Teacher teacher = new Teacher();
+            var gradePointTeacher = teacher.ComputeGradeAverage();
+            MessageBox.Show($"The teacher's grade average is {gradePointTeacher}");
         }
     }
 }

@@ -4,11 +4,15 @@ using System.Text;
 
 namespace SchoolLibrary
 {
-    class Student : Person
+    public class Student : Person
     {
 
         public enum GradeLevels { FirstYear, SecondYear, ThirdYear, ForthYear}
         public GradeLevels GradeLevel { get; set; }
-
+        public override float ComputeGradeAverage()
+        {
+            //this will be fixed later
+            return 0.0f;
+        }
     }
 }
